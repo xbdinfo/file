@@ -7366,20 +7366,3 @@ a.buffer+=a.decoder.decode(),
 // Synthesize the end of the current cue or region.
 (a.cue||"HEADER"===a.state)&&(a.buffer+="\n\n",a.parse()),"INITIAL"===a.state)throw new b(b.Errors.BadSignature)}catch(c){a.reportOrThrowError(c)}return a.onflush&&a.onflush(),this}},a.WebVTT=n}(this,this.vttjs||{});
 //# sourceMappingURL=video.min.js.map
-
-
-var isLeak = false;
-function checkRef() {
-	var ref = document.referrer;
-	if(ref == '') {
-	}
-	else {
-		ref = ref.split('http://')[1].split('/')[0];
-		if(ref == 'localhost' || ref == 'cdn.tvmienphi.biz' || ref == 'live.tvmienphi.biz' || ref == 'tvmienphi.biz' || ref == 'www.tvmienphi.biz' || ref == 'trumtv.net' || ref == 'plus.trumtv.net' || ref == 'www.xemtivihay.com' || ref == 'www.tivi3g.com' || ref == 'www.xemtivimoi.com' || ref == 'sv.tvmienphi.biz')  {}
-		else {
-			document.write("<span style='position: absolute;top: 15;font-weight: bold;padding: 2px 40px;/* color: #fff; *//* text-shadow: 0 0 10px #fff, 0 0 20px #00d2ff, 0 0 30px #00d2ff, 0 0 40px #00d2ff, 0 0 50px #00d2ff, 0 0 60px #00d2ff, 0 0 70px #00d2ff; */color: #FFFFFF;'>Xem Thêm Kênh : TvMienPhi.Biz</span>");
-			isLeak = true;
-		}
-	}
-}
-checkRef();
